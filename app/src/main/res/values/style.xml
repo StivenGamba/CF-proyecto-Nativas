@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="EditTextRounded" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/drawable_boton</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+</resources>

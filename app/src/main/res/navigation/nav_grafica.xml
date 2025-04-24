@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_grafica.xml"
+    app:defaultNavHost="true"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.taller_3_fragments.fragments.inicioFragment"
+        android:label="@string/inicio"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/balonesFragment"
+        android:name="com.example.taller_3_fragments.fragments.balonesFragment"
+        android:label="balones"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/camisetasFragment"
+        android:name="com.example.taller_3_fragments.fragments.camisetasFragment"
+        android:label="camisetas"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="com.example.taller_3_fragments.fragments.carritoFragment"
+        android:label="carritoFragment"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/categoriasFragment"
+        android:name="com.example.taller_3_fragments.fragments.categoriasFragment"
+        android:label="Categorias"
+        app:defaultNavHost="true">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/editarPerfirlFragment"
+        android:name="com.example.taller_3_fragments.fragments.editarPerfirlFragment"
+        android:label="editarPerfirlFragment"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/espinillerasFragment"
+        android:name="com.example.taller_3_fragments.fragments.espinillerasFragment"
+        android:label="espinillerasFragment"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/guayosFragment"
+        android:name="com.example.taller_3_fragments.fragments.guayosFragment"
+        android:label="guayosFragment"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/mediasFragment"
+        android:name="com.example.taller_3_fragments.fragments.mediasFragment"
+        android:label="mediasFragment"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.taller_3_fragments.fragments.perfilFragment"
+        android:label="perfilFragment"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/productosFragment"
+        android:name="com.example.taller_3_fragments.fragments.productosFragment"
+        android:label="productosFragment"
+        app:defaultNavHost="true" />
+
+    <fragment
+        android:id="@+id/sudaderasFragment"
+        android:name="com.example.taller_3_fragments.fragments.sudaderasFragment"
+        android:label="sudaderasFragment"
+        app:defaultNavHost="true" />
+
+
+</navigation>

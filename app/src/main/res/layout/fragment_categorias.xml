@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Primera fila -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="10sp"
+        tools:ignore="ExtraText">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="0sp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/img_logoCamisetas"
+                android:layout_width="145dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/camiseta_pele" />
+
+            <TextView
+                android:id="@+id/txt_camisetas"
+                android:layout_width="146dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/camisetas"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_CantidadCamisetas"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/explora_cantidad"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="00sp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/img_logoGuayos"
+                android:layout_width="145dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/zapatillas" />
+
+            <TextView
+                android:id="@+id/txt_guayos"
+                android:layout_width="146dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/guayos"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_DescripcionGuayos"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/explora_cantidad"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--Segunda fila -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="10sp"
+        android:paddingTop="20sp"
+        tools:ignore="ExtraText">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="0sp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/img_logoSudadera"
+                android:layout_width="145dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/sudadera" />
+
+            <TextView
+                android:id="@+id/txt_sudaderas"
+                android:layout_width="146dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/sudaderas"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_Cantidadsudaderas"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/explora_cantidad"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="00sp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/img_logoEspinilleras"
+                android:layout_width="145dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/espinilleras" />
+
+            <TextView
+                android:id="@+id/txt_Espinilleras"
+                android:layout_width="146dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/espinilleras"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_DescripcionEspinilleras"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/explora_cantidad"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Tercera fila -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="10sp"
+        android:paddingTop="20sp"
+        tools:ignore="ExtraText">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="0sp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/img_logoBalon"
+                android:layout_width="145dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/balon" />
+
+            <TextView
+                android:id="@+id/txt_Balon"
+                android:layout_width="146dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/balones"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_CantidadBalon"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/explora_cantidad"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="00sp"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/img_logoMedias"
+                android:layout_width="145dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/calcetines" />
+
+            <TextView
+                android:id="@+id/txt_Medias"
+                android:layout_width="146dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/medias"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_DescripcionMedias"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="10sp"
+                android:text="@string/explora_cantidad"
+                android:textAlignment="center"
+                android:textColor="@color/negro"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

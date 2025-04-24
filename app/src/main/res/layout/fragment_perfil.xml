@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="145dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/usuario" />
+
+
+    <!--
+        <Button
+            android:id="@+id/btn_CerrarSesion"
+            android:layout_width="173dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/verde"
+            android:text="@string/cerrar_sesi_n"
+            android:textColor="@color/blanco"
+            android:textSize="20sp"
+            app:strokeColor="@color/gris"
+            app:strokeWidth="3sp" />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="30sp"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/txt_nombres"
+            android:layout_width="77dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/nombre"
+            android:textAlignment="viewStart"
+            android:textColor="@color/negro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_NombreUser"
+            android:layout_width="268dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="nombre user"
+            android:textAlignment="viewStart"
+            android:textColor="@color/negro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="30sp"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/txt_apellidos"
+            android:layout_width="77dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/apellidos"
+            android:textAlignment="viewStart"
+            android:textColor="@color/negro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_ApellidoUser"
+            android:layout_width="266dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="apelliso user"
+            android:textAlignment="viewStart"
+            android:textColor="@color/negro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="30sp"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/txt_correo"
+            android:layout_width="77dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/correo"
+            android:textAlignment="viewStart"
+            android:textColor="@color/negro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_correoUser"
+            android:layout_width="265dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="correo user"
+            android:textAlignment="viewStart"
+            android:textColor="@color/negro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="30sp"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/txt_telefono"
+            android:layout_width="77dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/telefono"
+            android:textAlignment="viewStart"
+            android:textColor="@color/negro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_TelefonoUser"
+            android:layout_width="263dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="telefono user"
+            android:textAlignment="viewStart"
+            android:textColor="@color/negro"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_editar"
+        android:layout_width="143dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/verdeClaro"
+        android:text="@string/editar"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/txt_TelefonoUser"
+        app:strokeColor="@color/grisClaro"
+        app:strokeWidth="3sp" />
+
+
+</LinearLayout>

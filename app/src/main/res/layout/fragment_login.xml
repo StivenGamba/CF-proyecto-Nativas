@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/grisClaro">
+
+    <!-- Logo and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logoestrellas" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:src="@drawable/nombreapp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grisOscuro"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <!-- Login Instructions -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textLogin"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/negro"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Email/Phone Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/usuario" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/drawable_input"
+            android:hint="@string/correo_o_tel_fono"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Password Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/contrasena" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/drawable_input"
+            android:hint="@string/contrasena"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:backgroundTint="@drawable/drawable_boton"
+        android:strokeColor="@color/grisOscuro"
+        android:text="@string/iniciar_sesi_n"
+        android:textAllCaps="false"
+        android:textColor="@color/blanco"
+        android:textSize="20sp" />
+
+    <!-- Forgot Password -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/olvidaste_tu_contrasena"
+            android:textColor="@color/negro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewResetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recuperala_aqui"
+            android:textColor="@color/azulClaro"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Google Login -->
+    <Button
+        android:id="@+id/buttonGoogleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/drawable_boton_google"
+        android:drawableStart="@drawable/google"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/inicia_sesi_n_con_google"
+        android:textAllCaps="false"
+        android:textColor="@color/grisOscuro"
+        android:drawablePadding="8dp" />
+
+    <!-- Register Link -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_n_no_tienes_una_cuenta"
+            android:textColor="@color/negro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_strate_aqu"
+            android:textColor="@color/azulClaro"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

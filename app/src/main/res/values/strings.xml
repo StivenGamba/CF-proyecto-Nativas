@@ -1,0 +1,60 @@
+<resources>
+    <string name="nombreAPP">Camiseta Futbolera</string>
+    <string name="minombre">Stiven Nicolás Gamba Robayo</string>
+    <string name="registro">Regístrate</string>
+    <string name="comienza">Comienza</string>
+    <string name="ingresa">Ingresar</string>
+    <string name="recuperaContrana">Recupera Tu Contraseña</string>
+    <string name="ingresaGoogle">Ingresa con Google</string>
+    <string name="noCuenta">¿No tienes cuenta?</string>
+    <string name="bienvenidaHome">Inicia una nueva aventura con Tienda Deportiva y descubre una nueva forma de ver el mundo</string>
+    <string name="bienvenidaLogin">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="TYC">(*) Al registrarme en MOVI acepto los <u><font color='#00FFFF'>términos y condiciones</font>
+    </u> que puedes ver en nuestro web site.</string>
+    <string name="iniciarSesion">¿Ya estas registrado en Movi? <u><font color='#00FFFF'>inicia sesión aquí</font>
+    </u>.</string>
+    <string name="inicio">Inicio</string>
+    <string name="bienvenido">Bienvenido a Movi</string>
+    <string name="inicioMenu">inicio</string>
+    <string name="productosMenu">Productos</string>
+    <string name="pantalla_de_inicio">pantalla de inicio</string>
+    <string name="pantalla_de_productos">pantalla de productos</string>
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="navigation_drawer_close">cerrar</string>
+    <string name="cienaños_colomnbia">Colombia edición 100 años</string>
+    <string name="txtDescripcionProducto">Edición especial 100 años Colombia tallas: S - M - L - XL</string>
+    <string name="CantidadProducto">Cantidad de unidades: 39</string>
+    <string name="precio">$80.000 COP</string>
+    <string name="valor">valor</string>
+    <string name="agregar_al_carrito">Agregar Al carrito</string>
+    <string name="editar">Editar</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="correo">Correo:</string>
+    <string name="telefono">Telefono:</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="guardar">Guardar</string>
+    <string name="camisetas">CAMISETAS</string>
+    <string name="explora_cantidad">Explora mas de 59 referecias disponibles</string>
+    <string name="guayos">GUAYOS</string>
+    <string name="sudaderas">SUDADERAS</string>
+    <string name="espinilleras">ESPINILLERAS</string>
+    <string name="balones">BALONES</string>
+    <string name="medias">MEDIAS</string>
+    <string name="hola">Hola mundo</string>
+    <string name="categorias">Categorias</string>
+    <string name="carrito">Carrito</string>
+    <string name="pagar">Pagar</string>
+    <string name="total">Total:</string>
+    <string name="perfil">Perfil</string>
+    <string name="textLogin">Inicias sesión para comprar, vender\ny tener una mejor experiencia</string>
+    <string name="correo_o_tel_fono">Correo o teléfono</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="olvidaste_tu_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="recuperala_aqui">Recupérala aquí</string>
+    <string name="inicia_sesi_n_con_google">Inicia sesión con Google</string>
+    <string name="a_n_no_tienes_una_cuenta">¿Aún no tienes una cuenta?</string>
+    <string name="reg_strate_aqu">Regístrate aquí</string>
+    <string name="buscar">Buscar...</string>
+</resources>
