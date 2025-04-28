@@ -2,17 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/grisMedio">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageView
             android:src="@drawable/avatar"
-            android:layout_width="47dp"
-            android:layout_height="35dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginEnd="8dp"/>
 
         <LinearLayout
@@ -21,7 +22,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/minombre"
                 android:textStyle="bold"
@@ -38,9 +39,38 @@
                 android:text="@string/celular_contacto" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/direccion_contacto" />
         </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonGoogleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/azulClaro"
+        android:drawableStart="@drawable/google"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/blanco"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/inicia_sesi_n_con_google"
+        android:textAllCaps="false"
+        app:icon="@drawable/google"
+        app:iconSize="24dp"
+        app:iconTint="@null"
+        />
+
+
+        />
+
+
+
 
     </LinearLayout>
 

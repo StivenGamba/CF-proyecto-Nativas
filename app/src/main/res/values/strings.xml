@@ -59,4 +59,6 @@
     <string name="buscar">Buscar...</string>
     <string name="correo_contacto">camisetafutboleraC0L@gmail.com</string>
     <string name="celular_contacto">+57-311 817 6454</string>
+    <string name="direccion_contacto">K xx Este No. xx-xx Barrio XX, Bogotá, D.C. COLOMBIA</string>
+    <string name="nombre_perfil">Información del nombre</string>
 </resources>
