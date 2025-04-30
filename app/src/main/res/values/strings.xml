@@ -35,13 +35,13 @@
     <string name="cerrar_sesi_n">Cerrar sesión</string>
     <string name="guardar">Guardar</string>
     <string name="camisetas">CAMISETAS</string>
-    <string name="explora_cantidad">Explora mas de 59 referecias disponibles</string>
+    <string name="explora_cantidad">Explora más de 59 referencias disponibles</string>
     <string name="guayos">GUAYOS</string>
     <string name="sudaderas">SUDADERAS</string>
     <string name="espinilleras">ESPINILLERAS</string>
     <string name="balones">BALONES</string>
     <string name="medias">MEDIAS</string>
-    <string name="hola">Hola mundo</string>
+    <string name="hola">Hola Mundo</string>
     <string name="categorias">Categorias</string>
     <string name="carrito">Carrito</string>
     <string name="pagar">Pagar</string>
@@ -61,4 +61,9 @@
     <string name="celular_contacto">+57-311 817 6454</string>
     <string name="direccion_contacto">K xx Este No. xx-xx Barrio XX, Bogotá, D.C. COLOMBIA</string>
     <string name="nombre_perfil">Información del nombre</string>
+    <string name="informacion_de_la_cuenta">Informacion de la cuenta</string>
+    <string name="medios_de_pago">Medios de pago</string>
+    <string name="medio_de_pago">**** **** **** 1234</string>
+    <string name="datos_perfil">Datos Perfil</string>
+    <string name="direccion_de_entrega">direccion de entrega</string>
 </resources>
