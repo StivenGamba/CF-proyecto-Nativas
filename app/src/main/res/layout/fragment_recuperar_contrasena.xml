@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/grisClaro">
+
+    <!-- Logo and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logoestrellas" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:src="@drawable/nombreapp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grisOscuro"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+    </LinearLayout>
+
+    <!-- Login Instructions -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/txtRecuperarcontrasena"
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="16sp"
+        android:layout_margin="30dp"/>
+
+    <!-- Input correo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/email" />
+
+        <EditText
+            android:id="@+id/editTextCorreoRecuperarContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/drawable_input"
+            android:hint="@string/correoRE"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Enviar correo Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEnviarCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_margin="40dp"
+        android:text="@string/enviar_c_digo"
+        android:textAllCaps="false"
+        android:textColor="@color/blanco"
+        android:textSize="25sp"
+        app:cornerRadius="10dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/grisClaro"
+        android:backgroundTint="@color/azulOscuro" />
+
+
+    <!-- Forgot Password -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ya_tienes_una_cuenta"
+            android:textColor="@color/negro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewiniciarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iniciar_sesi_n"
+            android:textColor="@color/azulClaro"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Google Login -->
+    <Button
+        android:id="@+id/buttonGoogleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@android:color/white"
+        android:text="@string/inicia_sesi_n_con_google"
+        android:textColor="@color/grisOscuro"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/google"
+        app:iconSize="30dp"
+        app:iconTint="@null"
+        app:strokeColor="@color/grisOscuro"
+        app:strokeWidth="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+
+    <!-- Register Link -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_n_no_tienes_una_cuenta"
+            android:textColor="@color/negro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_strate_aqu"
+            android:textColor="@color/azulClaro"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

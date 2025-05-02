@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="@color/grisClaro">
+
+<!-- Logo and Title -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="32dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logoestrellas" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:src="@drawable/nombreapp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grisOscuro"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+</LinearLayout>
+
+<!-- validar Instrucciones-->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/txtValidar"
+    android:textAlignment="center"
+    android:textSize="16sp"
+    android:textColor="@color/negro"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:weightSum="6">
+
+        <EditText
+            android:id="@+id/et_box1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:background="@drawable/drawable_input"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_box2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:background="@drawable/drawable_input"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_box3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:background="@drawable/drawable_input"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_box4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:background="@drawable/drawable_input"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_box5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:background="@drawable/drawable_input"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_box6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/drawable_input"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+<!-- verificar Button -->
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/buttonVerificar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+    android:text="@string/verificar"
+    android:textAllCaps="false"
+    android:textColor="@color/blanco"
+    android:textSize="25sp"
+    app:cornerRadius="10dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/grisClaro"
+    android:backgroundTint="@color/azulOscuro"
+    android:layout_marginBottom="20dp"
+    />
+
+
+<!-- solicitar nuevo código -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puedes_solicitar_un_c_digo_nuevo_en"
+        android:textColor="@color/negro"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/textViewCronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03:00"
+        android:textColor="@color/negro"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="14sp"
+        android:layout_marginStart="8dp"/>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewsolicitarNuevoCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='@string/solicitar_nuevo_codigo'
+        android:textColor="@color/azulClaro"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="14sp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="10dp"/>
+
+
+<!-- Google Login -->
+<Button
+    android:id="@+id/buttonGoogleLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:backgroundTint="@android:color/white"
+    android:text="@string/inicia_sesi_n_con_google"
+    android:textColor="@color/grisOscuro"
+    android:textSize="20sp"
+    app:cornerRadius="10dp"
+    app:icon="@drawable/google"
+    app:iconSize="30dp"
+    app:iconTint="@null"
+    app:strokeColor="@color/grisOscuro"
+    app:strokeWidth="2dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"/>
+
+
+
+<!-- Register Link -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_n_no_tienes_una_cuenta"
+        android:textColor="@color/negro"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_strate_aqu"
+        android:textColor="@color/azulClaro"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="14sp"
+        android:layout_marginStart="8dp"/>
+</LinearLayout>
+</LinearLayout>
