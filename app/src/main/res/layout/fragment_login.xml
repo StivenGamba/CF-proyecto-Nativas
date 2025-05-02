@@ -29,7 +29,9 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/grisOscuro"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
     </LinearLayout>
 
     <!-- Login Instructions -->
@@ -96,17 +98,22 @@
     </LinearLayout>
 
     <!-- Login Button -->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        android:backgroundTint="@drawable/drawable_boton"
-        android:strokeColor="@color/grisOscuro"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:text="@string/iniciar_sesi_n"
         android:textAllCaps="false"
         android:textColor="@color/blanco"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/grisClaro"
+        android:backgroundTint="@color/azulOscuro" />
+
 
     <!-- Forgot Password -->
     <LinearLayout
@@ -131,7 +138,8 @@
             android:textColor="@color/azulClaro"
             android:clickable="true"
             android:focusable="true"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"/>
     </LinearLayout>
 
     <!-- Google Login -->
@@ -140,14 +148,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:background="@drawable/drawable_boton_google"
-        android:drawableStart="@drawable/google"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:backgroundTint="@android:color/white"
         android:text="@string/inicia_sesi_n_con_google"
-        android:textAllCaps="false"
         android:textColor="@color/grisOscuro"
-        android:drawablePadding="8dp" />
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/google"
+        app:iconSize="30dp"
+        app:iconTint="@null"
+        app:strokeColor="@color/grisOscuro"
+        app:strokeWidth="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
 
     <!-- Register Link -->
     <LinearLayout
@@ -172,6 +186,7 @@
             android:textColor="@color/azulClaro"
             android:clickable="true"
             android:focusable="true"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"/>
     </LinearLayout>
 </LinearLayout>

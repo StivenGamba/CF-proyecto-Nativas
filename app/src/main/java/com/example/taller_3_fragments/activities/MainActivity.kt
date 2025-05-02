@@ -88,9 +88,9 @@ class MainActivity : AppCompatActivity() {
             navController?.navigate(R.id.espinillerasFragment)
         }
 
-        findViewById<View>(R.id.icon_cart).setOnClickListener {
+        findViewById<View>(R.id.icon_perfil).setOnClickListener {
 
-            navController?.navigate(R.id.carritoFragment)
+            navController?.navigate(R.id.perfilFragment)
         }
     }
 

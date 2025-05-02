@@ -12,6 +12,13 @@
         app:defaultNavHost="true" />
 
     <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.taller_3_fragments.fragments.perfilFragment"
+        android:label="Perfil"
+        app:defaultNavHost="true" />
+
+
+    <fragment
         android:id="@+id/balonesFragment"
         android:name="com.example.taller_3_fragments.fragments.balonesFragment"
         android:label="balones"
@@ -59,12 +66,6 @@
         android:id="@+id/mediasFragment"
         android:name="com.example.taller_3_fragments.fragments.mediasFragment"
         android:label="mediasFragment"
-        app:defaultNavHost="true" />
-
-    <fragment
-        android:id="@+id/perfilFragment"
-        android:name="com.example.taller_3_fragments.fragments.perfilFragment"
-        android:label="perfilFragment"
         app:defaultNavHost="true" />
 
     <fragment

@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         applicationId = "com.example.taller_3_fragments"
-        minSdk = 33
-        targetSdk = 35
+        minSdk = 21
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
