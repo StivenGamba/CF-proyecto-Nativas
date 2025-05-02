@@ -9,7 +9,7 @@
     <string name="noCuenta">¿No tienes cuenta?</string>
     <string name="bienvenidaHome">Inicia una nueva aventura con Tienda Deportiva y descubre una nueva forma de ver el mundo</string>
     <string name="bienvenidaLogin">La aventura está por iniciar, por favor inicia sesión</string>
-    <string name="TYC">(*) Al registrarme en Camiseta Futbolera acepto los <u><font color='#00FFFF'>términos y condiciones</font>
+    <string name="TYC">(*) Al registrarme en MOVI acepto los <u><font color='#00FFFF'>términos y condiciones</font>
     </u> que puedes ver en nuestro web site.</string>
     <string name="iniciarSesion">¿Ya estas registrado en Movi? <u><font color='#00FFFF'>inicia sesión aquí</font>
     </u>.</string>
@@ -57,19 +57,4 @@
     <string name="a_n_no_tienes_una_cuenta">¿Aún no tienes una cuenta?</string>
     <string name="reg_strate_aqu">Regístrate aquí</string>
     <string name="buscar">Buscar...</string>
-    <string name="txt_registro">Registrate con tus datos personales, recuerda que todos los datos marcados con (*) son obligatorios</string>
-    <string name="nombreRE">Nombre *</string>
-    <string name="apellidoRE">Apellido *</string>
-    <string name="tel_fonoRE">Teléfono *</string>
-    <string name="correoRE">Correo *</string>
-    <string name="confirmar_correoRE">Confirmar correo *</string>
-    <string name="contrasenaRE">Contraseña *</string>
-    <string name="confirmar_contrase_aRE">Confirmar contraseña *</string>
-    <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta?</string>
-    <string name="txtRecuperarcontrasena">Escribe el correo a la cuenta asociada, te enviaremos un codigo de verificación</string>
-    <string name="enviar_c_digo">Enviar Código</string>
-    <string name="txtValidar">Digita el codigo de 6 digitos, que hemos enviado al correo electronico asociado.</string>
-    <string name="verificar">Verificar</string>
-    <string name="puedes_solicitar_un_c_digo_nuevo_en">Puedes solicitar un código nuevo en:</string>
-    <string name="solicitar_nuevo_codigo">Solicitar nuevo codigo</string>
 </resources>
