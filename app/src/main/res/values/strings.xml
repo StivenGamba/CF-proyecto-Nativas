@@ -57,4 +57,14 @@
     <string name="a_n_no_tienes_una_cuenta">¿Aún no tienes una cuenta?</string>
     <string name="reg_strate_aqu">Regístrate aquí</string>
     <string name="buscar">Buscar...</string>
+    <string name="correo_contacto">camisetafutboleraCOL@gmail.com</string>
+    <string name="celular_contacto">+57-311 817 6454</string>
+    <string name="direccion_contacto">Cra. XX Este # xx-xx Barrio XX Bogotá, Colombia</string>
+    <string name="datos_perfil">Datos del perfil</string>
+    <string name="nombre_perfil">Nombre del perfil</string>
+    <string name="informacion_de_la_cuenta">Información de la cuenta</string>
+    <string name="medios_de_pago">Medios de pago</string>
+    <string name="direccion_de_entrega">Dirección de entrega</string>
+    <string name="delivery_address">Dg 64 No. 1-55</string>
+
 </resources>
