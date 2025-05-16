@@ -67,5 +67,20 @@
     <string name="direccion_de_entrega">Dirección de entrega</string>
     <string name="delivery_address">Dg 64 No. 1-55</string>
     <string name="seguridad">Seguridad</string>
+    <string name="escribe_el_correo_a_la_cuenta_asociada_te_enviaremos_un_codigo_de_verificaci_n">Escribe el correo a la cuenta asociada, te enviaremos un codigo de verificación</string>
+    <string name="correoRE">Correo *</string>
+    <string name="enviar_c_digo">Enviar código</string>
+    <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta?</string>
+    <string name="registrate_con_tus_datos_personales_recuerda_que_todos_los_datos_marcados_con_son_obligatorios">Registrate con tus datos personales, recuerda que todos los datos marcados con (*) son obligatorios</string>
+    <string name="nombreRE">Nombre *</string>
+    <string name="apellidoRE">Apellido *</string>
+    <string name="tel_fonoRE">Teléfono *</string>
+    <string name="confirmar_correoRE">Confirmar correo *</string>
+    <string name="contrase_a">Contraseña *</string>
+    <string name="confirmar_contrase_a">Confirmar contraseña *</string>
+    <string name="digita_el_codigo_de_6_digitos_que_hemos_enviado_al_correo_electronico_asociado">Digita el codigo de 6 digitos, que hemos enviado al correo electronico asociado.</string>
+    <string name="verificar">Verificar</string>
+    <string name="puedes_solicitar_un_codigo_nuevo_en">Puedes solicitar un codigo nuevo en:</string>
+    <string name="solicitar_nuevo_c_digo">Solicitar nuevo código</string>
 
 </resources>

@@ -39,7 +39,7 @@ android:background="@color/grisClaro">
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="@string/txtValidar"
+    android:text="@string/digita_el_codigo_de_6_digitos_que_hemos_enviado_al_correo_electronico_asociado"
     android:textAlignment="center"
     android:textSize="16sp"
     android:textColor="@color/negro"
@@ -159,7 +159,7 @@ android:background="@color/grisClaro">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/puedes_solicitar_un_c_digo_nuevo_en"
+        android:text="@string/puedes_solicitar_un_codigo_nuevo_en"
         android:textColor="@color/negro"
         android:textSize="14sp"
         />
@@ -181,7 +181,7 @@ android:background="@color/grisClaro">
         android:id="@+id/textViewsolicitarNuevoCodigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text='@string/solicitar_nuevo_codigo'
+        android:text='@string/solicitar_nuevo_c_digo'
         android:textColor="@color/azulClaro"
         android:clickable="true"
         android:focusable="true"

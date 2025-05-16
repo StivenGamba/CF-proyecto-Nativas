@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/txtRecuperarcontrasena"
+        android:text="@string/escribe_el_correo_a_la_cuenta_asociada_te_enviaremos_un_codigo_de_verificaci_n"
         android:textAlignment="center"
         android:textColor="@color/negro"
         android:textSize="16sp"

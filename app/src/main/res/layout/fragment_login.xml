@@ -101,7 +101,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        android:backgroundTint="@drawable/drawable_boton"
+        android:backgroundTint="@color/azulOscuro"
         android:strokeColor="@color/grisOscuro"
         android:text="@string/iniciar_sesi_n"
         android:textAllCaps="false"

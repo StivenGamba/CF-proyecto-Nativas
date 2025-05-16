@@ -41,17 +41,18 @@
         </LinearLayout>
 
         <!-- Instruciones de registro -->
+
+        <!-- Nombre Input -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="16dp"
-            android:text="@string/txt_registro"
+            android:text="@string/registrate_con_tus_datos_personales_recuerda_que_todos_los_datos_marcados_con_son_obligatorios"
             android:textAlignment="center"
             android:textColor="@color/negro"
             android:textSize="16sp" />
 
-        <!-- Nombre Input -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -212,7 +213,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/drawable_input"
-                android:hint="@string/contrasenaRE"
+                android:hint="@string/contrase_a"
                 android:inputType="textPassword"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
@@ -240,7 +241,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/drawable_input"
-                android:hint="@string/confirmar_contrase_aRE"
+                android:hint="@string/confirmar_contrase_a"
                 android:inputType="textPassword"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"

@@ -8,8 +8,18 @@
     <fragment
         android:id="@+id/inicioFragment"
         android:name="com.example.taller_3_fragments.fragments.inicioFragment"
-        android:label="@string/inicio"
-        app:defaultNavHost="true" />
+        android:label="Inicio">
+        <action
+            android:id="@+id/action_inicioFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.taller_3_fragments.fragments.loginFragment"
+        android:label="Login"
+        app:defaultNavHost="true"/>
+
 
     <fragment
         android:id="@+id/perfilFragment"
