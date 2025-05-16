@@ -66,5 +66,6 @@
     <string name="medios_de_pago">Medios de pago</string>
     <string name="direccion_de_entrega">Dirección de entrega</string>
     <string name="delivery_address">Dg 64 No. 1-55</string>
+    <string name="seguridad">Seguridad</string>
 
 </resources>
