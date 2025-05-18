@@ -135,19 +135,27 @@
     </LinearLayout>
 
     <!-- Google Login -->
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/buttonGoogleLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/drawable_boton_google"
-        android:drawableStart="@drawable/google"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:layout_margin="32dp"
+        android:backgroundTint="@color/blanco"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:text="@string/inicia_sesi_n_con_google"
         android:textAllCaps="false"
-        android:textColor="@color/grisOscuro"
-        android:drawablePadding="8dp" />
+        android:textColor="@color/negro"
+        android:textSize="18sp"
+        app:icon="@drawable/google"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconTint="@null"
+        app:iconSize="24dp"
+        app:cornerRadius="4dp"
+        app:strokeColor="@color/grisOscuro"
+        app:strokeWidth="2dp"/>
+
 
     <!-- Register Link -->
     <LinearLayout

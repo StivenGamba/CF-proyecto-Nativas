@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_grafica.xml"
     app:defaultNavHost="true"
     app:startDestination="@id/inicioFragment">
@@ -14,19 +15,40 @@
             app:destination="@id/loginFragment" />
     </fragment>
 
+
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.taller_3_fragments.fragments.loginFragment"
-        android:label="Login"
-        app:defaultNavHost="true"/>
-
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/perfilFragment"
         android:name="com.example.taller_3_fragments.fragments.perfilFragment"
-        android:label="Perfil"
-        app:defaultNavHost="true" />
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil">
 
+        <action
+            android:id="@+id/action_perfilFragment_to_editarInfoPersonalFragment"
+            app:destination="@id/editarPerfilFragment"/>
+        <action
+            android:id="@+id/action_perfilFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+
+        <argument
+            android:name="userEmail"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="userName"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 
     <fragment
         android:id="@+id/balonesFragment"
@@ -50,13 +72,12 @@
         android:id="@+id/categoriasFragment"
         android:name="com.example.taller_3_fragments.fragments.categoriasFragment"
         android:label="Categorias"
-        app:defaultNavHost="true">
-    </fragment>
+        app:defaultNavHost="true"></fragment>
 
 
     <fragment
-        android:id="@+id/editarPerfirlFragment"
-        android:name="com.example.taller_3_fragments.fragments.editarPerfirlFragment"
+        android:id="@+id/editarPerfilFragment"
+        android:name="com.example.taller_3_fragments.fragments.editarPerfilFragment"
         android:label="editarPerfirlFragment"
         app:defaultNavHost="true" />
 

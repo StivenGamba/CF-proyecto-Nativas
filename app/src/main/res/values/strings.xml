@@ -82,5 +82,11 @@
     <string name="verificar">Verificar</string>
     <string name="puedes_solicitar_un_codigo_nuevo_en">Puedes solicitar un codigo nuevo en:</string>
     <string name="solicitar_nuevo_c_digo">Solicitar nuevo código</string>
+    <string name="default_web_client_id">registro!</string>
+    <string name="mi_informaci_n_personal">Mi información personal</string>
+    <string name="privacidad">Privacidad</string>
+    <string name="a_adir_n_mero_de_celular">Añadir número de celular</string>
+    <string name="agrega_una_direcci_n_de_entrega">Agrega una dirección de entrega</string>
+    <string name="no_disponible">No disponible</string>
 
 </resources>
