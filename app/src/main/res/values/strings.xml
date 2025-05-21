@@ -88,5 +88,12 @@
     <string name="a_adir_n_mero_de_celular">Añadir número de celular</string>
     <string name="agrega_una_direcci_n_de_entrega">Agrega una dirección de entrega</string>
     <string name="no_disponible">No disponible</string>
+    <string name="bogot">Bogotá</string>
+    <string name="correo_camiseta_futbolera">camiseta.futboleracol@gmail.com</string>
+    <string name="telefono_camiseta_futbolera">+57 311 817 6454</string>
+    <string name="direccion_camiseta_futbolera">Avenica Cra. 68 #68 - 20</string>
+    <string name="av_68">AV. 68</string>
+    <string name="cc_gran_estaci_n">CC. Gran estación</string>
+    <string name="cc_tunal">CC. tunal</string>
 
 </resources>
