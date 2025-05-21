@@ -12,19 +12,28 @@
         android:label="Inicio">
         <action
             android:id="@+id/action_inicioFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/LoginActivity" />
     </fragment>
 
 
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.taller_3_fragments.fragments.loginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login">
-        <action
-            android:id="@+id/action_loginFragment_to_perfilFragment"
-            app:destination="@id/perfilFragment" />
-    </fragment>
+    <activity
+        android:id="@+id/LoginActivity"
+        android:name="com.example.taller_3_fragments.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login">
+        <!-- Las acciones que salen de una actividad generalmente se manejan de manera diferente,
+             no directamente para navegar a un fragmento DENTRO del mismo NavHost
+             a menos que la actividad que lances contenga su propio NavHost.
+             Si action_loginFragment_to_perfilFragment era para después de que el login fuera exitoso
+             y se volviera a un NavHost anterior, esa lógica estaría en el código de la actividad. -->
+        <!-- Si el objetivo es que DESPUÉS de que loginActivity termine,
+             se navegue a perfilFragment, esta acción aquí podría no ser la forma correcta.
+             La navegación DESPUÉS de una actividad usualmente se maneja en el código
+             de la actividad que la lanzó (onActivityResult) o en la propia loginActivity
+             antes de llamar a finish(). -->
+
+        <!-- Si quieres pasar argumentos a la actividad, puedes usar <argument> aquí también -->
+    </activity>
 
     <fragment
         android:id="@+id/perfilFragment"
@@ -37,7 +46,7 @@
             app:destination="@id/editarPerfilFragment"/>
         <action
             android:id="@+id/action_perfilFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/LoginActivity" />
 
 
         <argument
@@ -72,7 +81,9 @@
         android:id="@+id/categoriasFragment"
         android:name="com.example.taller_3_fragments.fragments.categoriasFragment"
         android:label="Categorias"
-        app:defaultNavHost="true"></fragment>
+        app:defaultNavHost="true">
+
+    </fragment>
 
 
     <fragment

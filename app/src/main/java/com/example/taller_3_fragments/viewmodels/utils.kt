@@ -2,7 +2,6 @@ package com.example.taller_3_fragments.utils
 
 import android.content.Context
 import android.content.SharedPreferences
-import android.net.Uri
 
 object UserProfileManager {
 
@@ -15,6 +14,11 @@ object UserProfileManager {
 
     private fun getPreferences(context: Context): SharedPreferences {
         return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+    }
+    fun saveUserImageUri(context: Context, imageUri: String?) {
+        val editor = getPreferences(context).edit()
+        editor.putString(KEY_USER_IMAGE_URI, imageUri) // KEY_USER_IMAGE_URI debe estar definida
+        editor.apply()
     }
 
     fun saveUserProfile(

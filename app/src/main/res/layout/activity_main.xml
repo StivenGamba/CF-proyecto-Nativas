@@ -23,14 +23,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/azulOscuro"
-                android:padding="8dp">
+                android:padding="8dp"
+                >
 
                 <!-- Search bar layout -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="16dp">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
