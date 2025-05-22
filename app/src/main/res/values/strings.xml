@@ -96,5 +96,9 @@
     <string name="cc_gran_estaci_n">CC. Gran estación</string>
     <string name="cc_tunal">CC. tunal</string>
     <string name="volver_al_inicio">Volver al inicio</string>
+    <string name="crea_una_nueva_contrase_a_y_confirmala">Crea una nueva contraseña y confirmala</string>
+    <string name="cambiar_contrase_a">Cambiar Contraseña</string>
+    <string name="nueva_contrase_a">Nueva contraseña</string>
+    <string name="confirmar_nueva_contrase_a">Confirmar nueva contraseña</string>
 
 </resources>

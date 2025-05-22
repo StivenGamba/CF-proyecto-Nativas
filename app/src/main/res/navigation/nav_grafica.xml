@@ -11,7 +11,7 @@
         android:id="@+id/mapaFragment"
         android:name="com.example.taller_3_fragments.fragments.mapaFragment"
         android:label="Fragment_mapa"
-        tools:layout="@layout/fragment_mapa"/>
+        tools:layout="@layout/fragment_mapa" />
 
     <fragment
         android:id="@+id/inicioFragment"
@@ -27,13 +27,20 @@
         android:name="com.example.taller_3_fragments.activities.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login">
+
     </activity>
+
+    <activity
+        android:id="@+id/CrearNuevaContrasenaActivity"
+        android:name="com.example.taller_3_fragments.activities.CrearNuevaContrasenaActivity"
+        android:label="activity_crear_nueva_contrasena" />
 
     <activity
         android:id="@+id/ForgotPasswordActivity"
         android:name="com.example.taller_3_fragments.activities.ForgotPasswordActivity"
         android:label="activity_recuperar_contrasena"
         tools:layout="@layout/activity_recuperar_contrasena">
+
     </activity>
 
     <activity
@@ -41,6 +48,7 @@
         android:name="com.example.taller_3_fragments.activities.EnviarCodigoActivity"
         android:label="activity_validarcodigo"
         tools:layout="@layout/activity_validarcodigo">
+
     </activity>
 
 
@@ -49,6 +57,7 @@
         android:name="com.example.taller_3_fragments.activities.RegisterActivity"
         android:label="activity_register"
         tools:layout="@layout/activity_registro">
+
     </activity>
 
     <fragment

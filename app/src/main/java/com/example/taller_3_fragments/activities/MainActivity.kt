@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         // Configura la ActionBar/Toolbar para que funcione con el NavController y el DrawerLayout
-        setupActionBarWithNavController(navController, appBarConfiguration)
+     //   setupActionBarWithNavController(navController, appBarConfiguration)
 
         // --- Configurar Navigation Drawer (NavigationView) ---
         setupNavigationDrawer()

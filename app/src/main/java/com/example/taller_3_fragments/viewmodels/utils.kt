@@ -10,16 +10,13 @@ object UserProfileManager {
     private const val KEY_USER_EMAIL = "userEmail"
     private const val KEY_USER_PHONE = "userPhone"
     private const val KEY_USER_ADDRESS = "userAddress"
-    private const val KEY_USER_IMAGE_URI = "userImageUri" // Para la URI de la imagen
+    private const val KEY_USER_IMAGE_URI = "userImageUri"
+    private const val KEY_USER_PASSWORD = "userPassword"
 
     private fun getPreferences(context: Context): SharedPreferences {
         return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
     }
-    fun saveUserImageUri(context: Context, imageUri: String?) {
-        val editor = getPreferences(context).edit()
-        editor.putString(KEY_USER_IMAGE_URI, imageUri) // KEY_USER_IMAGE_URI debe estar definida
-        editor.apply()
-    }
+
 
     fun saveUserProfile(
         context: Context,
@@ -27,15 +24,22 @@ object UserProfileManager {
         email: String?,
         phone: String?,
         address: String?,
-        imageUri: String? // Guardamos la URI como String
+        password: String?,
+        imageUri: String?
     ) {
         val editor = getPreferences(context).edit()
         editor.putString(KEY_USER_NAME, name)
         editor.putString(KEY_USER_EMAIL, email)
         editor.putString(KEY_USER_PHONE, phone)
         editor.putString(KEY_USER_ADDRESS, address)
+        editor.putString(KEY_USER_PASSWORD, password)
         editor.putString(KEY_USER_IMAGE_URI, imageUri)
         editor.apply()
+    }
+
+    // Metodos para obtener
+    fun getUserPassword(context: Context): String? {
+        return getPreferences(context).getString(KEY_USER_PASSWORD, null)
     }
 
     fun getUserName(context: Context): String? {
@@ -58,13 +62,18 @@ object UserProfileManager {
         return getPreferences(context).getString(KEY_USER_IMAGE_URI, null)
     }
 
+    fun saveUserImageUri(context: Context, imageUri: String?) {
+        val editor = getPreferences(context).edit()
+        editor.putString(KEY_USER_IMAGE_URI, imageUri)
+        editor.apply()
+    }
+
     fun clearUserProfile(context: Context) {
         val editor = getPreferences(context).edit()
         editor.clear()
         editor.apply()
     }
 
-    // Helper para saber si hay datos de perfil guardados (al menos nombre o email)
     fun hasUserProfile(context: Context): Boolean {
         return getUserName(context) != null || getUserEmail(context) != null
     }

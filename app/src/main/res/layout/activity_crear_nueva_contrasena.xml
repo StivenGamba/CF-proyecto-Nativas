@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grisClaro"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+
+    <!-- Logo and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logoestrellas" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:src="@drawable/nombreapp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/grisOscuro" />
+    </LinearLayout>
+
+    <!-- Login Instructions -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/crea_una_nueva_contrase_a_y_confirmala"
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_mensajeUsuarioCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="30dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="16sp" />
+
+
+    <!-- Input contraseña nueva -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/contrasena" />
+
+        <EditText
+            android:id="@+id/et_nuevaContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/drawable_input"
+            android:hint="@string/nueva_contrase_a"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Input confirmar contraseña nueva -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/contrasena" />
+
+        <EditText
+            android:id="@+id/et_confirmarNuevaContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/drawable_input"
+            android:hint="@string/confirmar_nueva_contrase_a"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Enviar correo Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cambiarContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:backgroundTint="@color/azulOscuro"
+        android:padding="12dp"
+        android:text="@string/cambiar_contrase_a"
+        android:textAllCaps="false"
+        android:textColor="@color/blanco"
+        android:textSize="25sp"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/grisClaro"
+        app:strokeWidth="2dp" />
+
+
+    <!-- Forgot Password -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ya_tienes_una_cuenta"
+            android:textColor="@color/negro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_loginConContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/iniciar_sesi_n"
+            android:textColor="@color/azulClaro"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <!-- Register Link -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_n_no_tienes_una_cuenta"
+            android:textColor="@color/negro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_registerConContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/reg_strate_aqu"
+            android:textColor="@color/azulClaro"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
