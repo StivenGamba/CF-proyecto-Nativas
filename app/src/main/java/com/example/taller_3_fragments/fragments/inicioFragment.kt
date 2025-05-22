@@ -23,10 +23,6 @@ class inicioFragment : Fragment() {
 
         super.onViewCreated(view, savedInstanceState)
 
-        val btn = view.findViewById<Button>(R.id.btnIrLogin)
-        btn.setOnClickListener {
-            findNavController().navigate(R.id.action_inicioFragment_to_loginFragment)
-        }
 
     }
 }

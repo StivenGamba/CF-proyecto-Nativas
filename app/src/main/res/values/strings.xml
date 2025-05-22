@@ -100,5 +100,11 @@
     <string name="cambiar_contrase_a">Cambiar Contraseña</string>
     <string name="nueva_contrase_a">Nueva contraseña</string>
     <string name="confirmar_nueva_contrase_a">Confirmar nueva contraseña</string>
+    <string name="a_adir">Añadir</string>
+    <string name="millonarios_local_2025">Millonarios Local 2025</string>
+    <string name="mfc_fpc_jugador">MFC | FPC | Jugador</string>
+    <string name="millonarios_visitante_2024_25">Millonarios Visitante 2024-25</string>
+    <string name="millonarios_tercera_2024_25">Millonarios Tercera 2024-25</string>
+    <string name="millonarios_fleece_2024_25">Millonarios Fleece 2024-25</string>
 
 </resources>
