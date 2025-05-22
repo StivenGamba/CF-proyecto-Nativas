@@ -227,7 +227,7 @@ android:background="@color/grisClaro">
         android:textSize="14sp" />
 
     <TextView
-        android:id="@+id/textViewRegister"
+        android:id="@+id/tv_Register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/reg_strate_aqu"

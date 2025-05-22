@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.taller_3_fragments.R
@@ -39,6 +40,14 @@ class LoginActivity : AppCompatActivity() {
 
         btnGoogle.setOnClickListener {
             singIn()
+        }
+
+        val tv_registro = findViewById<TextView>(R.id.tv_Register)
+
+        tv_registro.setOnClickListener{
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
 

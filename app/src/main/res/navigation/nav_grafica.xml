@@ -29,6 +29,14 @@
         tools:layout="@layout/activity_login">
     </activity>
 
+
+    <activity
+        android:id="@+id/RegisterActivity"
+        android:name="com.example.taller_3_fragments.activities.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_registro">
+    </activity>
+
     <fragment
         android:id="@+id/perfilFragment"
         android:name="com.example.taller_3_fragments.fragments.perfilFragment"
