@@ -24,5 +24,11 @@
             android:icon="@drawable/usuario"
         android:title="@string/cerrar_sesi_n"
         android:orderInCategory="100"/>
+
+        <item
+            android:id="@+id/loginMenu"
+            android:icon="@drawable/usuario"
+            android:title="@string/iniciar_sesi_n"
+            android:orderInCategory="100"/>
     </group>
 </menu>

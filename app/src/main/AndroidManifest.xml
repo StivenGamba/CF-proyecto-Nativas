@@ -43,5 +43,13 @@
             android:name=".activities.RegisterActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activities.EnviarCodigoActivity"
+            android:exported="true" />
+
     </application>
 </manifest>

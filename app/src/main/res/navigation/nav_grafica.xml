@@ -29,6 +29,20 @@
         tools:layout="@layout/activity_login">
     </activity>
 
+    <activity
+        android:id="@+id/ForgotPasswordActivity"
+        android:name="com.example.taller_3_fragments.activities.ForgotPasswordActivity"
+        android:label="activity_recuperar_contrasena"
+        tools:layout="@layout/activity_recuperar_contrasena">
+    </activity>
+
+    <activity
+        android:id="@+id/EnviarCodigoActivity"
+        android:name="com.example.taller_3_fragments.activities.EnviarCodigoActivity"
+        android:label="activity_validarcodigo"
+        tools:layout="@layout/activity_validarcodigo">
+    </activity>
+
 
     <activity
         android:id="@+id/RegisterActivity"

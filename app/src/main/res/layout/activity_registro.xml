@@ -13,11 +13,45 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
+        <!-- Botón "Volver al inicio" estilizado -->
+        <LinearLayout
+            android:id="@+id/btnVolverInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/boton_volver_al_inicio"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/callback"
+                app:tint="@color/azulOscuro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/volver_al_inicio"
+                android:textColor="@color/azulOscuro"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
         <!-- Logo y Titulo -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -217,7 +251,9 @@
                 android:inputType="textPassword"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:clickable="true"
+                android:focusable="true"/>
         </LinearLayout>
 
         <!-- Confirmar Contraseña Input -->
@@ -298,7 +334,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -308,7 +345,7 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/textViewResetPassword"
+                android:id="@+id/tv_loginRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -316,54 +353,9 @@
                 android:focusable="true"
                 android:text="@string/iniciar_sesi_n"
                 android:textColor="@color/azulClaro"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                />
         </LinearLayout>
 
-        <!-- Google Login -->
-        <Button
-            android:id="@+id/buttonGoogleLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="30dp"
-            android:backgroundTint="@android:color/white"
-            android:text="@string/inicia_sesi_n_con_google"
-            android:textColor="@color/grisOscuro"
-            android:textSize="20sp"
-            app:cornerRadius="10dp"
-            app:icon="@drawable/google"
-            app:iconSize="30dp"
-            app:iconTint="@null"
-            app:strokeColor="@color/grisOscuro"
-            app:strokeWidth="2dp" />
-
-
-        <!-- Register Link -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/a_n_no_tienes_una_cuenta"
-                android:textColor="@color/negro"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/tv_Register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:text="@string/reg_strate_aqu"
-                android:textColor="@color/azulClaro"
-                android:textSize="14sp" />
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>

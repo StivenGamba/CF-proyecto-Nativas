@@ -1,5 +1,6 @@
 package com.example.taller_3_fragments.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.EditorInfo
@@ -29,6 +30,10 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+import android.view.Menu // Necesario para acceder a los ítems del menú
+import android.view.MenuItem // Necesario para acceder a los ítems del menú
+import androidx.core.view.isVisible
+import androidx.lifecycle.Observer // Si usas LiveData directamente
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,9 +56,7 @@ class MainActivity : AppCompatActivity() {
 
         // --- Inicializar Google Sign In Client ---
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestEmail() // Solicita el email del usuario
-            // Si usas Firebase y necesitas un ID token para autenticar con Firebase:
-            // .requestIdToken(getString(R.string.default_web_client_id))
+            .requestEmail()
             .build()
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
@@ -86,7 +89,8 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.inicioFragment, R.id.productosFragment, R.id.mapaFragment,
-                R.id.carritoFragment, R.id.perfilFragment
+                R.id.carritoFragment,
+                R.id.perfilFragment
                 // todos los IDs de fragmentos que son destinos principales
                 // accesibles desde el drawer o el bottom nav.
             ), drawerLayout
@@ -106,6 +110,24 @@ class MainActivity : AppCompatActivity() {
 
         // --- Configurar clic en iconos de la Toolbar ---
         setupClickListeners()
+
+        updateMenuItemsVisibility(userViewModel.userProfile.value != null)
+    }
+
+    /**
+     * Actualiza la visibilidad de los ítems del menú "Login" y "Logout"
+     * basado en el estado de inicio de sesión.
+     */
+    private fun updateMenuItemsVisibility(isLoggedIn: Boolean) {
+        // Asegúrate que navigationView y su menú estén disponibles
+        if (!::navigationView.isInitialized) return
+
+        val menu: Menu = navigationView.menu
+        val loginItem: MenuItem? = menu.findItem(R.id.loginMenu)
+        val logoutItem: MenuItem? = menu.findItem(R.id.logoutMenu)
+
+        loginItem?.isVisible = !isLoggedIn  // Mostrar "Login" si NO está logueado
+        logoutItem?.isVisible = isLoggedIn   // Mostrar "Logout" si SÍ está logueado
     }
 
     private fun cerrarSesion() {
@@ -180,7 +202,8 @@ class MainActivity : AppCompatActivity() {
             } else {
                 if (menuItem.itemId == R.id.logoutMenu) {
                     cerrarSesion()
-                } else {
+                } else if (menuItem.itemId == R.id.loginMenu) {
+                    login()
                     // Puedes manejar otros ítems especiales aquí si es necesario
                     // o simplemente no hacer nada si no es un destino de navegación ni logoutMenu
                 }
@@ -189,6 +212,12 @@ class MainActivity : AppCompatActivity() {
             drawerLayout.closeDrawer(GravityCompat.START)
             true // Indica que el evento fue consumido
         }
+    }
+
+    private fun login() {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
 
