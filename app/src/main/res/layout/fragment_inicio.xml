@@ -210,6 +210,7 @@
 
                     <!-- INICIO: Item de Producto 1 (Millonarios) -->
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cardProduct1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -225,12 +226,14 @@
                             android:padding="12dp">
 
                             <ImageView
+                                android:id="@+id/imageProduct1"
                                 android:layout_width="match_parent"
                                 android:layout_height="130dp"
                                 android:scaleType="centerCrop"
                                 android:src="@drawable/mfc2025loca" />
 
                             <TextView
+                                android:id="@+id/textProducName1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
@@ -242,6 +245,7 @@
                                 android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/textProductDescription1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="6dp"
@@ -252,6 +256,7 @@
                                 android:textSize="11sp" />
 
                             <TextView
+                                android:id="@+id/textProductPrice"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
@@ -268,6 +273,7 @@
                                 android:orientation="horizontal">
 
                                 <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/buttonAddToCard1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:backgroundTint="@color/azulOscuro"
