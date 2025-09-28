@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Taller_3_fragments"
+rootProject.name = "CamisetasFutboleras"
 include(":app")
  

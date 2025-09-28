@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.taller_3_fragments"
+    namespace = "com.example.camisetasfutboleras"
     compileSdk = 35
 
     defaultConfig {
